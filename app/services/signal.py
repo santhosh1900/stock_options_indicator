@@ -36,9 +36,9 @@ def get_signal(df):
     # Candle Color
     # ----------------------------
 
-    previous_green = previous["close"] > previous["open"]
+    previous_green = current["open"] > previous["open"]
 
-    previous_red = previous["close"] < previous["open"]
+    previous_red = current["open"] < previous["open"]
 
     current_green = current["close"] > current["open"]
 

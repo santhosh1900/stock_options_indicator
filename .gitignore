@@ -1,0 +1,28 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folders
+venv/
+env/
+
+.env
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log and compiled files
+*.log
+*.sqlite3
+*.db
+
+# Ignore VS Code settings (if using VS Code)
+.vscode/
+
+tester_folder/
+
+backup/
+alembic.ini
+alembic/
+
+gg.sql
