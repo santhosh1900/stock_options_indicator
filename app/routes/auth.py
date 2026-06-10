@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from fastapi.responses import RedirectResponse
 from app.services.zerodha import (
     get_login_url,
     generate_session
@@ -14,9 +15,7 @@ router = APIRouter()
 
 @router.get("/login")
 def login():
-    return {
-        "login_url": get_login_url()
-    }
+    return RedirectResponse(url= get_login_url())
 
 
 @router.get("/login/callback")
